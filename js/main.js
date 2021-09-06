@@ -18,5 +18,13 @@ const countdown = setInterval(() => {
     minutesElement.innerHTML = minutes;
     secondsElement.innerHTML = seconds;
 
+    if(difference < 0){
+        clearInterval(countdown)
+        daysElement.innerHTML = 0;
+        hoursElement.innerHTML = 0;
+        minutesElement.innerHTML = 0;
+        secondsElement.innerHTML = 0;
+    } 
+
 }, 1000);
 
