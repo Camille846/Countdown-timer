@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -11,15 +12,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0C141D;
-    font-family: 'Poppins', sans-serif;
+    background-color: #526a74;
+    font-family: 'Roboto', sans-serif;
     color:#fff;
 }
 
 .container{
-    width: 800px;
-    height: 500px;
-    background-image: url(/images/bg.jpeg);
+    width: 1000px;
+    height: 600px;
+    background-image: url(/images/bg1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
@@ -33,13 +34,15 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    top:-80px;
+    line-height: 35px;
+    
 }
 
 .title__subtext{
-    margin-top: 50px;
-    margin-bottom: 0;
     padding: 0;
     font-size: 1.5em;
+    font-weight: 100;
     text-transform: lowercase;
     text-align: center;
 }
@@ -49,16 +52,27 @@ body{
     position: absolute;
     width: 20px;
     height: 2px;
-    top:45%;
-    left:25%;
+    top:18px;
+    left:160px;
     background-color: #fff;
+    font-weight: 100;
+}
+.title__subtext::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top:18px;
+    left:355px;
+    background-color: #fff;
+    font-weight: 100;
 }
 
 .title__text{
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 4em;
     letter-spacing: 3px;
-    margin: 0;
+    margin-bottom: 40px;
 }
 
 .timer{
@@ -68,17 +82,23 @@ body{
     align-items: center;
     column-gap: 2rem;
     text-align: center;
+    margin-top: 55px;
 }
 
 .box{
     width: 150px;
-    background-color: rgba(0,0,0,.2);
+    height: 130px;
+    background-color: rgba(0,0,0,.6);
+    padding: 10px;
+    font-weight: 100;
 }
 
 .box span{
-    padding-top: 10px;
     padding-bottom: 0;
-    font-weight: 600;
-    font-size: 3em;
+    font-size: 5em;
+}
+
+p{
+    margin: 0;
 }
 
