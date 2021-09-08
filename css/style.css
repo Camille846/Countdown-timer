@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #526a74;
+    background-color:  #0a0f1d;
     font-family: 'Roboto', sans-serif;
     color:#fff;
 }
@@ -20,10 +20,11 @@ body{
 .container{
     width: 1000px;
     height: 600px;
-    background-image: url(/images/bg1.jpeg);
+    background-image: url(/images/bg.jpg);
+    background-position: 60%;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,12 +83,12 @@ body{
     align-items: center;
     column-gap: 2rem;
     text-align: center;
-    margin-top: 55px;
+    /* margin-top: 55px; */
 }
 
 .box{
     width: 150px;
-    height: 130px;
+    height: max-content;
     background-color: rgba(0,0,0,.6);
     padding: 10px;
     font-weight: 100;
@@ -100,5 +101,6 @@ body{
 
 p{
     margin: 0;
+    font-size: 1.7em;
 }
 
